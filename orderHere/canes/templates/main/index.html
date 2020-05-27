@@ -1,0 +1,20 @@
+{% extends "main/main_el.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      {% for o in orders %}
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">{{ o.order_name }}</span>
+            <p>{{ o.main_food }}</p>
+          </div>
+          <div class="card-action">
+            <a href="{{ o.id }}/delete">Done</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

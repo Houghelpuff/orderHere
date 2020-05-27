@@ -1,0 +1,8 @@
+{% extends "main/main_el.html" %}
+{% block content %}
+  <form action="." method="POST">
+    {% csrf_token %}
+    <h1>Did you complete the order for {{ order.order_name }}</h1>
+    <p><input type="submit" value="Yes" /> <a href="../">Cancel</a></p>
+  </form>
+{% endblock %}
