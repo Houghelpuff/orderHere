@@ -4,6 +4,14 @@ from .models import Order
 from .forms import OrderForm
 
 
+def get_details(req, id):
+    order = get_object_or_404(Order, id=id)
+    context = {
+        "order": order
+    }
+    return render(req, "main/details.html", context)
+
+
 def delete_order(req, id):
     order = get_object_or_404(Order, id=id)
     if req.method == 'POST':
