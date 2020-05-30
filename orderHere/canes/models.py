@@ -1,10 +1,15 @@
 from django.db import models
+from django import forms
+from multiselectfield import MultiSelectField
 
 FOOD = [('3 Piece', '3 Piece'), ('Box Combo', 'Box Combo'),
         ('Caniac Combo', 'Caniac Combo')]
 
 DRINKS = [('Sweet Tea', 'Sweet Tea'), ('Unsweet Tea', 'Unsweet Tea'),
           ('Coke', 'Coke'), ('Dr. Pepper', 'Dr. Pepper')]
+
+OPTIONAL_ITEMS = [('No slaw', 'No slaw'), ('Extra Toast', 'Extra Toast'),
+                  ('Extra Fries', 'Extra Fries'), ('Extra Sauce', 'Extra Sauce')]
 
 
 class Order(models.Model):

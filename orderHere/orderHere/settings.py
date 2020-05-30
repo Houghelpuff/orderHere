@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'canes',
     'materializecssform',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [
