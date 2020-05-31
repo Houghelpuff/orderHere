@@ -2,15 +2,40 @@
   background-color: rgb(255, 18, 81);
 }
 
+.home_button {
+  width: 200px;
+  background-color: white;
+  color: rgb(255, 18, 81);
+}
+
+.btn:hover {
+  background-color: rgb(255, 18, 81) !important;
+  color: white !important;
+}
+
 .thanks_wrapper {
   text-align: center;
   justify-content: center;
 }
 
+.big_thanks_wrapper {
+  text-align: center;
+  justify-content: center;
+  height: 500px;
+  margin: auto;
+  background-color: rgb(255, 18, 81);
+  padding-top: 200px;
+}
 .home_link {
   color: white;
 }
 
 .center_content {
   text-align: center;
+}
+
+.thanks_header {
+  padding-bottom: 50px;
+  color: white;
+  font-weight: bolder;
 }
