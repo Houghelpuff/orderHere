@@ -8,8 +8,12 @@ FOOD = [('3 Piece', '3 Piece'), ('Box Combo', 'Box Combo'),
 DRINKS = [('Sweet Tea', 'Sweet Tea'), ('Unsweet Tea', 'Unsweet Tea'),
           ('Coke', 'Coke'), ('Dr. Pepper', 'Dr. Pepper')]
 
-OPTIONAL_ITEMS = [('No slaw', 'No slaw'), ('Extra Toast', 'Extra Toast'),
-                  ('Extra Fries', 'Extra Fries'), ('Extra Sauce', 'Extra Sauce')]
+
+class OptionalItems(models.Model):
+    item_name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.item_name
 
 
 class Order(models.Model):
@@ -18,6 +22,7 @@ class Order(models.Model):
         max_length=20, choices=FOOD, default='Cane\'s order')
     drink = models.CharField(
         max_length=15, choices=DRINKS, default='Drink Choice')
+    additional_items = models.ManyToManyField(OptionalItems)
 
     def __str__(self):
         return self.order_name
