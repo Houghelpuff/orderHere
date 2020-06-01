@@ -32,10 +32,22 @@
 
 .center_content {
   text-align: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .thanks_header {
   padding-bottom: 50px;
   color: white;
   font-weight: bolder;
+}
+
+.delete_yes {
+  position: relative;
+  right: -350px;
+}
+
+.delete_cancel {
+  position: relative;
+  left: -350px;
 }
