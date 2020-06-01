@@ -18,7 +18,8 @@ def delete_order(req, id):
         order.delete()
         return redirect('canes:homepage')
     context = {
-        "orders": Order.objects.all
+        "orders": Order.objects.all,
+        "order": order,
     }
     return render(req, "main/delete.html", context)
 
