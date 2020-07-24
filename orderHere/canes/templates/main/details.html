@@ -1,9 +1,17 @@
 {% extends "main/main_el.html" %}
 {% block content %}
-  <div class="thanks_wrapper">
-    <h2>{{ order.order_name }}</h2>
-    <h5><u>Chicken Option</u>
-    <br> 
-    <h5>{{ order.main_food }}</h5>
+  <div class="details_wrapper">
+    <h1 class="details_header">{{ order.order_name }}</h1>
+    <h4 class="detials_sub"><u>Chicken Option</u></h4>
+    <h5 class="detials_sub" style="padding-bottom: 20px;">{{ order.main_food }}
+    </h5>
+    <h4 class="detials_sub"><u>Drink</u></h4>
+    <h5 class="detials_sub" style="padding-bottom: 20px;">{{ order.drink }}</h5>
+    <h4 class="detials_sub"><u>Extras</u></h4>
+    {% for ai in order.additional_items.all %}
+    <h5 class="detials_sub">
+      {{ ai }}
+    </h5>
+    {% endfor %}
   </div>
 {% endblock %}
