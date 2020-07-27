@@ -1,0 +1,106 @@
+.my_color {
+  background-color: rgb(255, 18, 81);
+}
+
+.home_button {
+  width: 200px;
+  background-color: white;
+  color: rgb(255, 18, 81);
+}
+
+.btn:hover {
+  background-color: rgb(255, 18, 81) !important;
+  color: white !important;
+}
+
+.thanks_wrapper {
+  text-align: center;
+  justify-content: center;
+}
+
+.big_thanks_wrapper {
+  text-align: center;
+  justify-content: center;
+  height: 500px;
+  margin: auto;
+  background-color: rgb(255, 18, 81);
+  padding-top: 200px;
+}
+
+.home_link {
+  color: white;
+}
+
+.center_content {
+  text-align: center;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.thanks_header {
+  padding-bottom: 50px;
+  color: white;
+  font-weight: bolder;
+}
+
+.delete_yes {
+  position: relative;
+  right: -350px;
+}
+
+.delete_cancel {
+  position: relative;
+  left: -350px;
+}
+
+.input-field input:focus + label {
+  color: rgb(255, 18, 81) !important;
+}
+/* label underline focus color */
+.row .input-field input:focus input {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important;
+}
+
+.dropdown-content,
+.select-dropdown,
+ul,
+li {
+  color: rgb(255, 18, 81) !important;
+}
+
+.order_btn {
+  width: 200px;
+  background-color: rgb(255, 18, 81);
+  color: white;
+}
+
+.order_btn:hover {
+  width: 200px;
+  color: rgb(255, 18, 81) !important;
+  background-color: white !important;
+}
+
+form {
+  color: rgb(255, 18, 81) !important;
+}
+
+.detials_sub {
+  color: white;
+  font-weight: bolder;
+}
+
+.details_wrapper {
+  text-align: center;
+  justify-content: center;
+  height: 650px;
+  margin: auto;
+  background-color: rgb(255, 18, 81);
+  padding-top: 30px;
+}
+
+.details_header {
+  padding-bottom: 15px;
+  color: white;
+  font-weight: bolder;
+}
