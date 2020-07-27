@@ -1,1 +1,1 @@
-web: gunicorn orderHere/orderHere.wsgi --log-file -
+web: gunicorn orderHere.wsgi --log-file -
