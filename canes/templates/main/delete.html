@@ -3,13 +3,13 @@
 <div class="big_thanks_wrapper">
     <h1 class="thanks_header">Did you complete the order for {{ order.order_name }}?</h1>
     <div class="row">
-      <div class="col s6">
+      <div class="col s12 m6 l6">
         <form action="." method="POST">
           {% csrf_token %}
         <a href="../"><button class="btn home_button my_color delete_yes" type="submit" value="Yes">Yes</button></a>
         </form>
       </div>
-      <div class="col s6">
+      <div class="col s12 m6 l6">
         <a href="/"><button class="btn home_button my_color delete_cancel" value="No">Cancel</button></a>
     </div>
   </div>
