@@ -24,6 +24,7 @@ class Order(models.Model):
     drink = models.CharField(
         max_length=15, choices=DRINKS, default='Drink Choice')
     additional_items = models.ManyToManyField(OptionalItems)
+    additional_notes = models.TextField(default='More notes')
 
     def __str__(self):
         return self.order_name
